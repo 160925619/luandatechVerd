@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: white;
+}
+
+.subtitulo {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.1;
+}
+
+.descricao {
+    max-width: 650px;
+    margin: 25px auto 35px;
+    font-size: 18px;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.botao:hover {
+    opacity: 0.85;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.servicos h2,
+.precos h2,
+.galeria h2,
+.sobre h2,
+.contacto h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.icone {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+
+/* PREÇOS */
+
+.precos {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.precos-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.preco-card {
+    position: relative;
+    background: #f9fafb;
+    width: 300px;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.preco-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.preco {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.preco-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.preco-card li {
+    margin: 10px 0;
+}
+
+.destaque {
+    transform: scale(1.05);
+}
+
+.etiqueta {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* GALERIA */
+
+.galeria {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    padding: 80px 20px;
+    text-align: center;
+    background: white;
+}
+
+.sobre p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#formulario {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario input,
+#formulario textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#formulario textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#resultado {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.whatsapp {
+    margin-top: 10px;
+}
+
+
+/* MAPA */
+
+.mapa {
+    max-width: 900px;
+    margin: 40px auto 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav.aberto {
+        display: flex;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+
+    .card,
+    .preco-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .destaque {
+        transform: none;
+    }
+
+    .galeria-container img {
+        width: 100%;
+        max-width: 350px;
+        height: 220px;
+    }
+
+    .mapa iframe {
+        height: 280px;
+    }
+}.card,
+.preco-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.preco-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.destaque:hover {
+    transform: translateY(-8px) scale(1.05);
+}
